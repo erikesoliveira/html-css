@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            margin: 0px
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+
+        h1 {
+            background-color: black;
+            color: white;
+            margin: 0px auto 0px auto;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        #menu {
+            background-color: rgb(49, 49, 49);
+            padding: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        header > h2 {
+            margin: 20px 50px 0px 50px;
+            box-shadow: 5px -1px 14px rgba(0, 0, 0, 0.479);
+        }
+
+        nav {
+            background-color: rgb(192, 109, 7);
+            padding: 3px;
+            border-top: 0px;
+            box-shadow: 5px -1px 14px rgba(0, 0, 0, 0.486);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        header > nav {
+            margin: 0px 50px 40px 50px;
+        }
+
+        nav > a {
+            margin-left: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <h2 id="menu">Menu</h2>
+        <nav style="text-align: center;">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Erikes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur provident dolores maxime esse soluta veniam totam quos vero error iure, libero dicta exercitationem excepturi atque? Accusantium aliquam consequatur quia hic!</p>
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">Desenvolvido por Erikes Oliveira</p>
+
+    </footer>
+</body>
+</html>
