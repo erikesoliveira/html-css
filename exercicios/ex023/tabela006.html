@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            background-color: rgb(59, 59, 59);
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: 0px;
+            background-color: rgb(59, 59, 59);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        td.posiçao {
+            width: 40px;
+            text-align: center;
+        }
+
+        td.populaçao {
+            text-align: right;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus officiis voluptatibus asperiores expedita error sit ad quas autem, commodi nemo reiciendis, minus eligendi et ducimus illo neque natus unde.</p>
+    <div>
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <tr>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

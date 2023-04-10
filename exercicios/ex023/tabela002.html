@@ -60,161 +60,167 @@
             background-color: gray;
             color: white;
         }
+
+        div {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <table>
-        <caption>População por Estado</caption>
-        <thead>
+    <div>
+        <table>
+            <caption>População por Estado</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                </tr>
+            </thead>
+        <tbody>
             <tr>
-                <th scope="col">Posição</th>
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 100px;">População</th>
+                <td class="posiçao">1</td>
+                <td>São Paulo</td>
+                <td class="populaçao">46 024 937</td>
             </tr>
-        </thead>
-    <tbody>
-        <tr>
-            <td class="posiçao">1</td>
-            <td>São Paulo</td>
-            <td class="populaçao">46 024 937</td>
-        </tr>
-        <tr>
-            <td class="posiçao">2</td>
-            <td>Minas Gerais</td>
-            <td class="populaçao">20 732 660	</td>
-        </tr>
-        <tr>
-            <td class="posiçao">3</td>
-            <td>Rio de Janeiro</td>
-            <td class="populaçao">16 615 526</td>
-        </tr>
-        <tr>
-            <td class="posiçao">4</td>
-            <td>Bahia</td>
-            <td class="populaçao">14 659 023</td>
-        </tr>
-        <tr>
-            <td class="posiçao">5</td>
-            <td>Paraná</td>
-            <td class="populaçao">11 835 379</td>
-        </tr>
-        <tr>
-            <td class="posiçao">6</td>
-            <td>Rio Grande do Sul</td>
-            <td class="populaçao">11 088 065</td>
-        </tr>
-        <tr>
-            <td class="posiçao">7</td>
-            <td>Pernambuco</td>
-            <td class="populaçao">9 051 113</td>
-        </tr>
-        <tr>
-            <td class="posiçao">8</td>
-            <td>Ceará</td>
-            <td class="populaçao">8 936 431</td>
-        </tr>
-        <tr>
-            <td class="posiçao">9</td>
-            <td>Pará</td>
-            <td class="populaçao">8 442 962</td>
-        </tr>
-        <tr>
-            <td class="posiçao">10</td>
-            <td>Santa Catarina</td>
-            <td class="populaçao">7 762 154</td>
-        </tr>
-        <tr>
-            <td class="posiçao">11</td>
-            <td>Goiás</td>
-            <td class="populaçao">6 950 976</td>
-        </tr>
-        <tr>
-            <td class="posiçao">12</td>
-            <td>Maranhão</td>
-            <td class="populaçao">6 800 605</td>
-        </tr>
-        <tr>
-            <td class="posiçao">13</td>
-            <td>Espírito Santo</td>
-            <td class="populaçao">4 108 508</td>
-        </tr>
-        <tr>
-            <td class="posiçao">14</td>
-            <td>Paraíba</td>
-            <td class="populaçao">4 030 961</td>
-        </tr>
-        <tr>
-            <td class="posiçao">15</td>
-            <td>Amazonas</td>
-            <td class="populaçao">3 952 262</td>
-        </tr>
-        <tr>
-            <td class="posiçao">16</td>
-            <td>Mato Grosso</td>
-            <td class="populaçao">3 784 239</td>
-        </tr>
-        <tr>
-            <td class="posiçao">17</td>
-            <td>Rio Grande do Norte</td>
-            <td class="populaçao">3 303 953</td>
-        </tr>
-        <tr>
-            <td class="posiçao">18</td>
-            <td>Piauí</td>
-            <td class="populaçao">3 270 174</td>
-        </tr>
-        <tr>
-            <td class="posiçao">19</td>
-            <td>Alagoas</td>
-            <td class="populaçao">3 125 254</td>
-        </tr>
-        <tr>
-            <td class="posiçao">20</td>
-            <td>Distrito Federal</td>
-            <td class="populaçao">2 923 369</td>
-        </tr>
-        <tr>
-            <td class="posiçao">21</td>
-            <td>Mato Grosso do Sul</td>
-            <td class="populaçao">2 833 742</td>
-        </tr>
-        <tr>
-            <td class="posiçao">22</td>
-            <td>Sergipe</td>
-            <td class="populaçao">2 211 868</td>
-        </tr>
-        <tr>
-            <td class="posiçao">23</td>
-            <td>Rondônia</td>
-            <td class="populaçao">1 616 379</td>
-        </tr>
-        <tr>
-            <td class="posiçao">24</td>
-            <td>Tocantins</td>
-            <td class="populaçao">1 584 306</td>
-        </tr>
-        <tr>
-            <td class="posiçao">25</td>
-            <td>Acre</td>
-            <td class="populaçao">829 780</td>
-        </tr>
-        <tr>
-            <td class="posiçao">26</td>
-            <td>Amapá</td>
-            <td class="populaçao">774 268</td>
-        </tr>
-        <tr>
-            <td class="posiçao">27</td>
-            <td>Roraima</td>
-            <td class="populaçao">634 805	</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <th colspan="2" scope="row">Total de Habitantes
-        <td class="populaçao">210.147.125</td>
-    </tfoot>    
-    </table>
+            <tr>
+                <td class="posiçao">2</td>
+                <td>Minas Gerais</td>
+                <td class="populaçao">20 732 660	</td>
+            </tr>
+            <tr>
+                <td class="posiçao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="populaçao">16 615 526</td>
+            </tr>
+            <tr>
+                <td class="posiçao">4</td>
+                <td>Bahia</td>
+                <td class="populaçao">14 659 023</td>
+            </tr>
+            <tr>
+                <td class="posiçao">5</td>
+                <td>Paraná</td>
+                <td class="populaçao">11 835 379</td>
+            </tr>
+            <tr>
+                <td class="posiçao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="populaçao">11 088 065</td>
+            </tr>
+            <tr>
+                <td class="posiçao">7</td>
+                <td>Pernambuco</td>
+                <td class="populaçao">9 051 113</td>
+            </tr>
+            <tr>
+                <td class="posiçao">8</td>
+                <td>Ceará</td>
+                <td class="populaçao">8 936 431</td>
+            </tr>
+            <tr>
+                <td class="posiçao">9</td>
+                <td>Pará</td>
+                <td class="populaçao">8 442 962</td>
+            </tr>
+            <tr>
+                <td class="posiçao">10</td>
+                <td>Santa Catarina</td>
+                <td class="populaçao">7 762 154</td>
+            </tr>
+            <tr>
+                <td class="posiçao">11</td>
+                <td>Goiás</td>
+                <td class="populaçao">6 950 976</td>
+            </tr>
+            <tr>
+                <td class="posiçao">12</td>
+                <td>Maranhão</td>
+                <td class="populaçao">6 800 605</td>
+            </tr>
+            <tr>
+                <td class="posiçao">13</td>
+                <td>Espírito Santo</td>
+                <td class="populaçao">4 108 508</td>
+            </tr>
+            <tr>
+                <td class="posiçao">14</td>
+                <td>Paraíba</td>
+                <td class="populaçao">4 030 961</td>
+            </tr>
+            <tr>
+                <td class="posiçao">15</td>
+                <td>Amazonas</td>
+                <td class="populaçao">3 952 262</td>
+            </tr>
+            <tr>
+                <td class="posiçao">16</td>
+                <td>Mato Grosso</td>
+                <td class="populaçao">3 784 239</td>
+            </tr>
+            <tr>
+                <td class="posiçao">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="populaçao">3 303 953</td>
+            </tr>
+            <tr>
+                <td class="posiçao">18</td>
+                <td>Piauí</td>
+                <td class="populaçao">3 270 174</td>
+            </tr>
+            <tr>
+                <td class="posiçao">19</td>
+                <td>Alagoas</td>
+                <td class="populaçao">3 125 254</td>
+            </tr>
+            <tr>
+                <td class="posiçao">20</td>
+                <td>Distrito Federal</td>
+                <td class="populaçao">2 923 369</td>
+            </tr>
+            <tr>
+                <td class="posiçao">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="populaçao">2 833 742</td>
+            </tr>
+            <tr>
+                <td class="posiçao">22</td>
+                <td>Sergipe</td>
+                <td class="populaçao">2 211 868</td>
+            </tr>
+            <tr>
+                <td class="posiçao">23</td>
+                <td>Rondônia</td>
+                <td class="populaçao">1 616 379</td>
+            </tr>
+            <tr>
+                <td class="posiçao">24</td>
+                <td>Tocantins</td>
+                <td class="populaçao">1 584 306</td>
+            </tr>
+            <tr>
+                <td class="posiçao">25</td>
+                <td>Acre</td>
+                <td class="populaçao">829 780</td>
+            </tr>
+            <tr>
+                <td class="posiçao">26</td>
+                <td>Amapá</td>
+                <td class="populaçao">774 268</td>
+            </tr>
+            <tr>
+                <td class="posiçao">27</td>
+                <td>Roraima</td>
+                <td class="populaçao">634 805	</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="2" scope="row">Total de Habitantes
+            <td class="populaçao">210.147.125</td>
+        </tfoot>
+        </table>
+    </div>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam natus eligendi ullam quaerat impedit facere similique, perferendis, laborum ipsum totam enim, recusandae eos iste cumque? Deleniti totam illo omnis Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius, facere hic officiis animi consequatur, tenetur consectetur provident atque quidem qui non nesciunt enim totam possimus dolor repudiandae quo beatae!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dignissimos quia, maiores soluta veritatis impedit consectetur reprehenderit similique minima labore officiis animi delectus eaque iure aspernatur? Distinctio architecto accusantium necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae eaque vitae quisquam maiores veniam ullam aspernatur dolor, placeat laudantium. Aut distinctio et, perferendis voluptas molestias voluptatibus necessitatibus recusandae pariatur debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi velit repellat, tempore delectus a sequi perspiciatis placeat dignissimos numquam ex? Aspernatur, nisi consequuntur temporibus optio soluta dolor tempore alias quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod natus non tempore esse nulla dolore libero? Similique quia, atque pariatur fugit accusamus ea, itaque in excepturi consectetur, incidunt amet.</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam natus eligendi ullam quaerat impedit facere similique, perferendis, laborum ipsum totam enim, recusandae eos iste cumque? Deleniti totam illo omnis Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius, facere hic officiis animi consequatur, tenetur consectetur provident atque quidem qui non nesciunt enim totam possimus dolor repudiandae quo beatae!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dignissimos quia, maiores soluta veritatis impedit consectetur reprehenderit similique minima labore officiis animi delectus eaque iure aspernatur? Distinctio architecto accusantium necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae eaque vitae quisquam maiores veniam ullam aspernatur dolor, placeat laudantium. Aut distinctio et, perferendis voluptas molestias voluptatibus necessitatibus recusandae pariatur debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi velit repellat, tempore delectus a sequi perspiciatis placeat dignissimos numquam ex? Aspernatur, nisi consequuntur temporibus optio soluta dolor tempore alias quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod natus non tempore esse nulla dolore libero? Similique quia, atque pariatur fugit accusamus ea, itaque in excepturi consectetur, incidunt amet.</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam natus eligendi ullam quaerat impedit facere similique, perferendis, laborum ipsum totam enim, recusandae eos iste cumque? Deleniti totam illo omnis Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius, facere hic officiis animi consequatur, tenetur consectetur provident atque quidem qui non nesciunt enim totam possimus dolor repudiandae quo beatae!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dignissimos quia, maiores soluta veritatis impedit consectetur reprehenderit similique minima labore officiis animi delectus eaque iure aspernatur? Distinctio architecto accusantium necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae eaque vitae quisquam maiores veniam ullam aspernatur dolor, placeat laudantium. Aut distinctio et, perferendis voluptas molestias voluptatibus necessitatibus recusandae pariatur debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi velit repellat, tempore delectus a sequi perspiciatis placeat dignissimos numquam ex? Aspernatur, nisi consequuntur temporibus optio soluta dolor tempore alias quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod natus non tempore esse nulla dolore libero? Similique quia, atque pariatur fugit accusamus ea, itaque in excepturi consectetur, incidunt amet.</p>
